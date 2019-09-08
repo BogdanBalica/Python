@@ -1,0 +1,72 @@
+# # # Printeaza cuvintele care incep cu litere de la 'h' la 'z'
+# #
+# quote = "Wheresoever you go, go with all your heart world"
+# word = ''
+# for letter in quote:
+#     if letter.isalpha():
+#         word += letter
+#     elif word.lower() >= 'h':
+#         print(word.upper())
+#         word = ''
+#     else:
+#         word = ''
+# if word.lower() >= 'h':
+#     print(word.upper())
+# #
+# # ----------------------------------------------------------------------
+# # while True:
+# #         y = input('care este suma ?')
+# #         if y != ('done'):
+# #                 print(y)
+# #         elif y == 'done':
+# #                 print('stop')
+# #                 break
+# # ----------------------------------------------------------------------
+# #
+# #
+# # list_num = [ ]
+# # count_even = 0
+# #
+# # loop_condition= True
+# #
+# # while(loop_condition == True):
+# #     integer_enter= int(input())
+# #     integer_append= list_num.append(integer_enter)
+# #     if(integer_enter % 2 == 0):
+# #         count_even += 1
+# #     elif(integer_enter == 0):
+# #         loop_condition = False
+# #
+# # print('The number of even integers is %d' % count_even)
+# #
+# # print(list_num)
+# #
+# #
+# # ------------------------------------------------------------------
+# #
+# # y = input(('Iesim la o bere ?').upper())
+# # if y.upper() == ('NU'):
+# #     print('Neprietenosi :)')
+# # if y.upper() == 'DA':
+# #     print('Super !!!')
+# #     z = input(('Unde mergem ?').upper())
+# # else:
+# #     print('Bye bye')
+# #
+# # ------------------------------------------------------------------
+#
+# # Avem 2 intervale orare definite prin cate 3 intregi:
+# # h1,m1,s1 - orelele,minute si secunde primul interval
+# # h2,m2,s2 - orele si minutele pentru cel de al 2 lea interval
+# # Salvati in h1,m1,s1 - suma intervalelor.
+# #  Exemplu : h1=2; m1=20, s1=40
+# #        h2=22; m1=39; s1=20
+# # Rezultat : h1=1   m1=0  s1=0
+# # Hint:
+# # Calculam prima data secundele. (s1+=s2)
+# # Daca secundele depasesc 60, scadem 60 si incrementam m1; if (s1>60) {s1-=60;m1++;}
+# # Calculam minutele.
+# # Daca minutele depasesc 60 , scadem 60 si incrementam orele;
+# # Calculam orele.
+# # Daca orele depasesc 24, scadem 24 (ora e intre 0-23).
+#
