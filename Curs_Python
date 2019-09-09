@@ -1,0 +1,77 @@
+
+# # ----------------------------------------------------------------------- Exercitiu: Afiseaza cuvintele care incep cu lietere de la "h" la "z"
+
+# quote = "Wheresoever you go, go with all your heart world"
+# word = ''
+# for letter in quote:
+#     if letter.isalpha():
+#         word += letter
+#     elif word.lower() >= 'h':
+#         print(word.upper())
+#         word = ''
+#     else:
+#         word = ''
+# if word.lower() >= 'h':
+#     print(word.upper())
+
+# # ----------------------------------------------------------------------- Exercitiu: append() si pop()
+
+# while True:
+#         y = input('Ceva ?')
+#         subtotal = []
+#         subtotal.append(y)
+#         print(subtotal.pop())
+#         print(y)
+#         break
+
+# # ----------------------------------------------------------------------- Exercitiu: append() si pop()
+
+# while True:
+#         y = input('care este suma ?')
+#         subtotal = []
+#         if y != ('done'):
+#                 len(y)!= 0
+#                 subtotal.append(y)
+#                 print(subtotal.pop())
+#                 print(y)
+#         elif y == 'done':
+#                 print('stop')
+#                 break
+
+# ----------------------------------------------------------------------- Scoate ultimele 2 elemente din lista
+
+# y = [2, 3, 4, 5, 6]
+# subtotal_1 = y.pop()
+# subtotal_2 = y.pop()
+# print(subtotal_1)
+# print(subtotal_2)
+
+# ----------------------------------------------------------------------- Iterare prin lista pana se goleste
+
+# y = [1, 2, 3, 4, 5, 6]
+#
+# while y:
+#     print(y.pop(), 'a fost scos din lista.' + ' Acum lista este = ', y)
+
+# ----------------------------------------------------------------------- Exercitiu: Cauta un nume si daca il gaseste il sterge din lista
+
+# nume = ['bogdan', 'george', 'laurentiu']
+# cuvant = input('Ce nume vrei sa elimini ?')
+#
+#
+# if cuvant in nume:
+#     nume.remove('bogdan')
+#     print(nume)
+# else:
+#     print('Nu a fost gasit numele', cuvant, 'in lista.')
+
+# ----------------------------------------------------------------------- Exercitiu: Elimina cate un element si il aduna la total prin incrementare
+
+# numbers = [2, 3, 2]
+# total = 0
+# while numbers:
+#     total += numbers.pop()
+#     print(numbers)
+#     print(total)
+
+# -----------------------------------------------------------------------
