@@ -38,7 +38,7 @@
 #                 print('stop')
 #                 break
 
-# ----------------------------------------------------------------------- Scoate ultimele 2 elemente din lista
+## ----------------------------------------------------------------------- Scoate ultimele 2 elemente din lista
 
 # y = [2, 3, 4, 5, 6]
 # subtotal_1 = y.pop()
@@ -46,14 +46,14 @@
 # print(subtotal_1)
 # print(subtotal_2)
 
-# ----------------------------------------------------------------------- Iterare prin lista pana se goleste
+## ----------------------------------------------------------------------- Iterare prin lista pana se goleste
 
 # y = [1, 2, 3, 4, 5, 6]
 #
 # while y:
 #     print(y.pop(), 'a fost scos din lista.' + ' Acum lista este = ', y)
 
-# ----------------------------------------------------------------------- Exercitiu: Cauta un nume si daca il gaseste il sterge din lista
+## ----------------------------------------------------------------------- Exercitiu: Cauta un nume si daca il gaseste il sterge din lista
 
 # nume = ['bogdan', 'george', 'laurentiu']
 # cuvant = input('Ce nume vrei sa elimini ?')
@@ -65,7 +65,7 @@
 # else:
 #     print('Nu a fost gasit numele', cuvant, 'in lista.')
 
-# ----------------------------------------------------------------------- Exercitiu: Elimina cate un element si il aduna la total prin incrementare
+## ----------------------------------------------------------------------- Exercitiu: Elimina cate un element si il aduna la total prin incrementare
 
 # numbers = [2, 3, 2]
 # total = 0
@@ -74,4 +74,6 @@
 #     print(numbers)
 #     print(total)
 
-# -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
+
+
