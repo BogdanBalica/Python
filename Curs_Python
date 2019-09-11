@@ -76,4 +76,34 @@
 
 ## -----------------------------------------------------------------------
 
+#def animale():
+# 
+#     sir = ['cat', 'goat', 'dog']
+#     name = input('enter the name of an animal:')
+# 
+#     for name in sir:
+#         name = input('enter the name of an animal:')
+#         if name == 'horse':
+#             sir.append(name)
+#             print(sir)
+#         if name == 'cat':
+#             sir.pop(0)
+#             print(sir)
+#             continue
+#         if name == 'cat':
+#             sir.remove(name)
+#             print(sir)
+# 
+#     for name in sir:
+#         name = input('enter the name of an animal:')
+#         if name == ' ':
+#             sir.pop()
+#             print(sir)
+#         if name == ' ':
+#             sir.pop()
+#             print(sir)
+#             print('Goodbye!')
+# 
+# animale()
+
 
