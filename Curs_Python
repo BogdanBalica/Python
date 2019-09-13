@@ -106,4 +106,24 @@
 # 
 # animale()
 
+###########################################################################
+
+# poem = 'Little fly, Thy summer’s play My thoughtless hand Has brushed away. ' \
+#        'Am not I A fly like thee? Or art not thou A man like me?'
+# diff_char = ['?', '!', '.']
+#
+# def word_mixer():
+#     lista = poem.split()
+#     lista_1 = []
+#     lenght = len(lista)
+#
+#     for x in lista:
+#         if len(x) <=3:
+#             x=x.lower()
+#             lista_1.append(x)
+#         if len(x) > 5:
+#             x=x.upper()
+#             lista_1.append(x)
+#         print(lista_1)
+#         break
 
