@@ -1,1 +1,74 @@
+######## SPLIT BILL AND TIP ########
+print("Welcome to the tip calculator")
+bill = float(input("What was the total bill? $"))
+percentage = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+number_people = int(input("How many people to split the bill? "))
+percentage_calc = percentage / 100
+dollar_persona = round((bill + (bill * percentage_calc)) / number_people, 2)
+print(f"Each persone should pay: ${dollar_persona}")
+
+
+######## Odd number or not ########
+number = int(input())
+b = number % 2
+if b == 0:
+  print("This is an even number.")
+else:
+  print("This is an odd number.")
+
+
+######## BMI calcutation ########
+height = float(input())
+weight = int(input())
+bmi = round(weight/(height ** 2), 2)
+if bmi < 18.5:
+  print(f"Your BMI is {bmi}, you are underweight.")
+elif bmi < 25:
+  print(f"Your BMI is {bmi}, you have a normal weight.")
+elif bmi < 30:
+  print(f"Your BMI is {bmi}, you are slightly overweight.")
+elif bmi < 35:
+  print(f"Your BMI is {bmi}, you are obese.")
+else:
+  print(f"Your BMI is {bmi}, you are clinically obese.")
+
+
+######## Calculate leap year ########
+year = int(input())
+a = year % 4
+b = year % 100
+c = year % 400
+if a != 0:
+  print("Not leap year")
+elif a == 0 and b != 0:
+  print("Leap year")
+elif a == 0 and b == 0 and c != 0:
+  print("Not leap year")
+elif a == 0 and b == 0 and c == 0:
+  print("Leap year")
+else:
+  print("Not leap year")
+
+######## Pizza bill calculation ########
+print("Thank you for choosing Python Pizza Deliveries!")
+size = input() # What size pizza do you want? S, M, or L
+add_pepperoni = input() # Do you want pepperoni? Y or N
+extra_cheese = input() # Do you want extra cheese? Y or N
+bill = 0
+
+if size == "S":
+  bill += 15
+elif size == "M":
+  bill += 20
+else:
+  bill += 25
+if add_pepperoni == "Y":
+  if size == "S":
+    bill += 2
+  else:
+    bill += 3
+if extra_cheese == "Y":
+  bill += 1
+print(f"Your final bill is: ${bill}.")
+
 
