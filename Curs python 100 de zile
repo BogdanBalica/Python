@@ -119,3 +119,49 @@ while True:
     else:
         print("Game over")
         break
+
+######## Treasure hunt ########
+
+def draw_castle():
+    castle = [
+        "                                       ,.=,,==. ,,_",
+        "                      _ ,====, _    |I|`` ||  `|I `|",
+        "                     |`I|    || `==,|``   ^^   ``  |",
+        "                     | ``    ^^    ||_,===TT`==,,_ |",
+        "                     |,==Y``Y==,,__| \L=_-`'   +J/`",
+        "                      \|=_  ' -=#J/..-|=_-     =|",
+        "                       |=_   -;-='`. .|=_-     =|----T--,",
+        "                       |=/\  -|=_-. . |=_-/^\  =||-|-|::|____",
+        "                       |=||  -|=_-. . |=_-| |  =|-|-||::\____",
+        "                       |=LJ  -|=_-. . |=_-|_| =||-|-|:::::::",
+        "                       |=_   -|=_-_.  |=_-     =|-|-||:::::::",
+        "                       |=_   -|=//^\. |=_-     =||-|-|:::::::",
+        "                   ,   |/&_,_-|=||  | |=_-     =|-|-||:::::::",
+        "                ,--``8%,/    ',%||  | |=_-     =||-|-|%::::::",
+        "            ,---`_,888`  ,.'''''`-.,|,|/!,--,.&\|&\-,|&#:::::",
+        "           |;:;K`__,...;=\_____,=``           %%%&     %#,---",
+        "           |;::::::::::::|       `'.________+-------\   ``",
+        "          /8M%;:::;;:::::|                  |        `-------",
+
+    ]
+    for row in castle:
+        print(row)
+draw_castle()
+health=100
+print("\nWelcome to the Treasure Hunt.\nYour mission is to find the treasure in the most dangerous castle.\nBe prepared to face angry monsters and impossible chalanges")
+ready = input('\nAre you ready to start the adventure? Type "YES" if you are or "NO" if need more time to sharp your weapons. --> ').lower()  # Plesase type "yes" or "no"
+if ready == "yes":
+    nameHero = input("What is your name hero? ")  # Plesase type "yes" or "no"
+    print(f'It\'s an honor to meet you {nameHero}. Your helath is {health}%')
+    print("You find yourself in front of the castle. The gate is closes and a big tranch sorunds it. the tanch is filled with water and crocodiles")
+    getIntheCastel = input('You need to take the first decision. How to get inside. Will you "SWIM" or "WAIT" to sneak in the castel during the night?')
+    if getIntheCastel == "WAIT":
+        print("Find a hideout to wait the night")
+        
+    else:
+        health -= 30
+        print(f'You succed to survive and entered the castle, but the crodiles injured you and now your health is at {health}%')
+else:
+    print("Come back when you are ready ")
+
+
