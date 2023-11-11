@@ -147,21 +147,32 @@ def draw_castle():
     for row in castle:
         print(row)
 draw_castle()
-health=100
-print("\nWelcome to the Treasure Hunt.\nYour mission is to find the treasure in the most dangerous castle.\nBe prepared to face angry monsters and impossible chalanges")
-ready = input('\nAre you ready to start the adventure? Type "YES" if you are or "NO" if need more time to sharp your weapons. --> ').lower()  # Plesase type "yes" or "no"
-if ready == "yes":
-    nameHero = input("What is your name hero? ")  # Plesase type "yes" or "no"
-    print(f'It\'s an honor to meet you {nameHero}. Your helath is {health}%')
-    print("You find yourself in front of the castle. The gate is closes and a big tranch sorunds it. the tanch is filled with water and crocodiles")
-    getIntheCastel = input('You need to take the first decision. How to get inside. Will you "SWIM" or "WAIT" to sneak in the castel during the night?')
-    if getIntheCastel == "WAIT":
-        print("Find a hideout to wait the night")
-        
-    else:
-        health -= 30
-        print(f'You succed to survive and entered the castle, but the crodiles injured you and now your health is at {health}%')
-else:
-    print("Come back when you are ready ")
+print("\n")
+print("\nWelcome to the Treasure Hunt.\n\nYour mission is to find the treasure in the most dangerous castle.\nBe prepared to face angry monsters and impossible challenges.")
 
+ready = input('\nAre you ready to start the adventure? Type "YES" if you are or "NO" if you need more time to sharpen your weapons. --> ').lower()
+
+if ready == "yes":
+    health = int(100)  # Initialize health
+    nameHero = input("What is your name, hero? ")
+    print(f'It\'s an honor to meet you, {nameHero}. Your health is at {health}%.')
+
+    print("You find yourself in front of the castle. The gate is closed, and a big trench surrounds it. The trench is filled with water and crocodiles.")
+    getIntheCastle = input('You need to make the first decision. How to get inside. Will you "SWIM" or "WAIT" to sneak in the castle during the night? --> ').lower()
+
+    if getIntheCastle == "wait":
+        print("Find a hideout to wait for the night")
+    elif getIntheCastle == "swim":
+        health -= 30
+        print(f'You succeed in surviving and entered the castle, but the crocodiles injured you. Now your health is {health}%')
+    crossRoad = input('You\'re hiding behind a house, very close to a cross street. Which way will you go? On the "LEFT" or on the "RIGHT"? --> ').lower()
+    if crossRoad == "right":
+        print(f'You just avoided the guards, and the street is free ahead.')
+    elif crossRoad == "left":
+        health /=2
+        print(f'You faced two guards and had to fight them. You lost half of the remaining life. You are now at {health}%')
+
+
+else:
+    print("Come back when you are ready.")
 
