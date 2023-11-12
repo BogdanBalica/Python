@@ -176,7 +176,7 @@ if ready == "yes":
 else:
     print("Come back when you are ready.")
 
-######## FOR loop ########
+######## FOR loop LEN and AVG function########
 
 student_heights = [151, 145, 179]
 counter = 0
@@ -188,3 +188,12 @@ avg =int(round(suma/counter, 0))
 print(f'total height = {suma}')
 print(f'number of students = {counter}')
 print(f'average height = {avg}')
+
+######## FOR loop - MAX function ########
+
+maax = student_scores[0]
+
+for n in student_scores[1:]:
+    if n >  maax:
+        maax = n
+print(f'The highest score in the class is: {maax}')
