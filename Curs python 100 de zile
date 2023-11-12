@@ -176,3 +176,15 @@ if ready == "yes":
 else:
     print("Come back when you are ready.")
 
+######## FOR loop ########
+
+student_heights = [151, 145, 179]
+counter = 0
+suma = 0
+for n in student_heights:
+    counter += 1
+    suma +=n
+avg =int(round(suma/counter, 0))
+print(f'total height = {suma}')
+print(f'number of students = {counter}')
+print(f'average height = {avg}')
