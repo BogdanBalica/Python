@@ -210,3 +210,18 @@ for number in range(1, target+1):
 for n in lista_1:
     counter += n
 print(counter)
+
+
+######## FOR loop - FizzBuzz game ########
+
+target = 100
+for number in range(1, target+1):
+    if (number % 3 != 0) and (number % 5 == 0):
+        number = str("Buzz")
+    elif (number % 3 == 0) and (number % 5 != 0):
+        number = str("Fizz")
+    elif (number % 3 == 0) and (number % 5 == 0):
+        number = str("FizzBuzz")
+    else:
+        number
+    print(number)
