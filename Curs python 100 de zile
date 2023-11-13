@@ -197,3 +197,16 @@ for n in student_scores[1:]:
     if n >  maax:
         maax = n
 print(f'The highest score in the class is: {maax}')
+
+
+######## FOR loop - Sum of odd numbers in a range ########
+
+target = 100
+counter = 0
+lista_1 = []
+for number in range(1, target+1):
+    if number % 2 == 0:
+        lista_1 == lista_1.append(number)
+for n in lista_1:
+    counter += n
+print(counter)
